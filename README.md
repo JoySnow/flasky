@@ -9,3 +9,22 @@ For Readers of the First Edition of the Book
 --------------------------------------------
 
 The code examples for the first edition of the book were moved to a different repository: [https://github.com/miguelgrinberg/flasky-first-edition](https://github.com/miguelgrinberg/flasky-first-edition).
+
+
+How to set up email usage?
+==========================
+
+1. create a bash file, eg, env.sh.
+2. $ cat env.sh
+> export FLASKY_ADMIN=xxx@163.com
+export MAIL_SERVER=smtp.163.com
+export MAIL_PORT=25
+export MAIL_USE_TLS=True
+export MAIL_USERNAME=xxx@163.com
+export MAIL_PASSWORD=<Shou Quan Ma>
+
+3. $ chmod +x env.sh
+4. $ source ./env.sh
+
+So, these variables are accessable to config.py.
+
